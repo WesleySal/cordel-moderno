@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root {
@@ -14,8 +15,9 @@
     font-size: 1em;
 }
 
-body {
-    text-align: justify;
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
 }
 
 header {
@@ -41,58 +43,41 @@ a {
     font-weight: bolder;
 }
 
-main {
+a:hover {
+    text-decoration: underline;
+}
 
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+.normal {
+    background-color: white;
+    color: black;
+    padding: 100px 0px 100px 20px;
+}
+
+.imagem {
+    background-color: rgb(107, 107, 107);
+    color: white;
+}
+
+.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.288);
 }
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 1px;
-    margin: 1px -8px;
-    border: 0px;
-}
-
-.container {
+    padding: 10px;
     
-    height: 400px;
-    margin: -10px;
-    padding: 10px;
-    border: 10px;
-    background-image: url('imagens/background001.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center center;
-    background-attachment: scroll;
-
 }
 
-.container2 {
-    height: 400px;
-    margin: -10px;
-    padding: 10px;
-    border: 10px;
-    background-image: url(imagens/background002.jpg);
-    background-size: 100% 100%;
-    background-position: center center;
-    background-attachment: scroll;
-}
 
-.conteudo {
-    position: relative;
-    text-align: justify;
-    max-width: 180px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.219);
-    color: white;
 
-    top: 50%;
-    left: 5%;
-
-    transform: translate(-5%, -50%);
-}
-
-.texto {
-    padding: 100px 0px 100px 20px;
-}
